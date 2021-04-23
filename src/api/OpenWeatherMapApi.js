@@ -6,10 +6,10 @@ const OpenWeatherMapApi = axios.create({
     method: 'get',
     params: {
         appid: process.env.REACT_APP_OPEN_WEATHER_APP_ID,
-        units: 'metric'
+        units: 'metric',
     },
     timeout: 2000,
-    timeoutErrorMessage: OPEN_WEATHER_MAP_TIMEOUT_MESSAGE
+    timeoutErrorMessage: OPEN_WEATHER_MAP_TIMEOUT_MESSAGE,
 });
 
 export default OpenWeatherMapApi;
