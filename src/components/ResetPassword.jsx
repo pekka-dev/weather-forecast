@@ -17,25 +17,24 @@ import { SrcMsgError } from '../model';
 import { useAuth } from '../contexts/AuthContext';
 import * as Constants from '../utils/constants';
 
-
 const useStyles = makeStyles((theme) => ({
     paper: {
         marginTop: theme.spacing(8),
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     avatar: {
         margin: theme.spacing(1),
-        backgroundColor: theme.palette.secondary.main
+        backgroundColor: theme.palette.secondary.main,
     },
     form: {
         width: '100%', // Fix IE 11 issue.
-        marginTop: theme.spacing(1)
+        marginTop: theme.spacing(1),
     },
     submit: {
-        margin: theme.spacing(3, 0, 2)
-    }
+        margin: theme.spacing(3, 0, 2),
+    },
 }));
 
 export default function ResetPassword() {
@@ -68,10 +67,10 @@ export default function ResetPassword() {
 
     return (
         <Container component="main" maxWidth="xs">
-            <CssBaseline/>
+            <CssBaseline />
             <div className={classes.paper}>
                 <Avatar className={classes.avatar}>
-                    <LockOutlinedIcon/>
+                    <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
                     Reset Password
@@ -88,9 +87,7 @@ export default function ResetPassword() {
                         autoComplete="email"
                         autoFocus
                     />
-                    <LoadingButton loading={loading}>
-                        Send email
-                    </LoadingButton>
+                    <LoadingButton loading={loading}>Send email</LoadingButton>
                     <Grid container justify="flex-end">
                         <Grid item>
                             <Link variant="body2" component={RouterLink} to="/login">
@@ -98,14 +95,15 @@ export default function ResetPassword() {
                             </Link>
                         </Grid>
                     </Grid>
-                    {alert &&
-                    <Alert severity={error.msg ? 'error' : 'info'}>
-                        {error.msg ? error.msg : Constants.EMAIL_SENT_ALERT}
-                    </Alert>}
+                    {alert && (
+                        <Alert severity={error.msg ? 'error' : 'info'}>
+                            {error.msg ? error.msg : Constants.EMAIL_SENT_ALERT}
+                        </Alert>
+                    )}
                 </form>
             </div>
             <Box mt={8}>
-                <Copyright/>
+                <Copyright />
             </Box>
         </Container>
     );

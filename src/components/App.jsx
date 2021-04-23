@@ -11,14 +11,15 @@ import ResetPassword from './ResetPassword';
 function App() {
     return (
         <Router>
-            <CssBaseline/>
+            <CssBaseline />
             <AuthProvider>
-                <PrivateRoute exact path="/" component={Home}/>
-                <Route path="/login" component={LogIn}/>
-                <Route path="/signup" component={SignUp}/>
-                <Route path="/reset-pass" component={ResetPassword}/>
+                <PrivateRoute exact path="/" component={Home} />
+                <Route path="/login" component={LogIn} />
+                <Route path="/signup" component={SignUp} />
+                <Route path="/reset-pass" component={ResetPassword} />
             </AuthProvider>
-        </Router>);
+        </Router>
+    );
 }
 
 export default App;

@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function LoadingButton({children, loading }) {
+export default function LoadingButton({ children, loading }) {
     const classes = useStyles();
 
     return (
