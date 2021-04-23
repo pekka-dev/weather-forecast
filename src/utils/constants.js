@@ -1,0 +1,10 @@
+export const EMAIL_SENT_ALERT = 'An email is sent for further instructions';
+export const ENTER_EMAIL = 'Enter an email address';
+export const ENTER_PASSWORD = 'Enter a password';
+export const ENTER_FIRST_NAME = 'Enter a first name';
+export const ENTER_LAST_NAME = 'Enter a last name';
+export const EMAIL_PASS_INCORRECT = 'Email or Password is incorrect';
+export const PASS_INVALID = 'The password is invalid';
+export const DEFAULT_ERROR = 'Something went wrong. Please try again!';
+export const OPEN_WEATHER_MAP_BASE_URL = 'https://api.openweathermap.org/data/2.5';
+export const OPEN_WEATHER_MAP_TIMEOUT_MESSAGE = 'Cannot fetch weather data. Please try again!';
